@@ -1,0 +1,23 @@
+1. Germany is not spelt correctly
+2. Krakow is not spelt correctly
+3. When drop off date is set to a date that's before the pick up date, error handling is not handled properly
+4. When searching for a specific car model, the results doesn't show just that specific model
+5. When setting the country, the cities aren't listed to the corresponding country. Thus when a wrong city is chosen for the country, results are still shown
+6. Got Exception at /rent/28 Too big load. Error handling at personal information not handled properly
+
+Variable	             Value
+csrfmiddlewaretoken	     'p43ejpCt7iSEgsWGEROLAGkaq3kOR6zxUw1wmr7h0W3kdIpibDumYIB6b2POeXO0'
+name	                 '11111111111111111111111111111111111111111111111111'
+last_name	             '11'
+card_number	             '123123'
+email	                 '123@td.com'
+
+7. After entering personal info and clicking on rent button, got 
+Page not found (404)
+Request Method:	POST
+Request URL:	http://qalab.pl.tivixlabs.com/rent/1
+Raised by:	apps.cars.views.RentCar
+Ups cannot redirect to success url
+
+You're seeing this error because you have DEBUG = True in your Django settings file. Change that to False, and Django will display a standard 404 page.
+
