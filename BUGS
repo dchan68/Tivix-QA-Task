@@ -21,3 +21,4 @@ Ups cannot redirect to success url
 
 You're seeing this error because you have DEBUG = True in your Django settings file. Change that to False, and Django will display a standard 404 page.
 
+8. Even without entering date, user was still able to see list of available rental cars
